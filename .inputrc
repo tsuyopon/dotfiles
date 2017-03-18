@@ -1,0 +1,18 @@
+# http://www.ksknet.net/freebsd/inputrc_terater.html
+set convert-meta off
+set meta-flag on
+set output-meta on
+
+# none, visible or audible
+set bell-style none
+
+# re-read .inputrc
+"\C-x\C-r":re-read-init-file
+
+# for macintosh completion :  http://ameblo.jp/nekocat2/entry-11539657198.html
+# comple: only list 
+# possible-completion: display possible list below
+# insert-completions: replace all candidate
+# menu-complete: replace 1 by 1 candidate.
+set completion-ignore-case on
+TAB: complete

@@ -1,0 +1,62 @@
+# escape文字をTに変更します。
+escape ^t^t
+
+# 起動時に表示される(うざったい)メッセージをoffにします。
+startup_message off
+
+# 回線切断時には自動でdetachする。
+autodetach on
+
+# スクロールバッファの数を増やします。
+defscrollback 5000
+
+# ^T w を押下時にはウィンドウリストを表示します
+bind w windowlist -b
+
+# ターミナルのステータスラインを利用する
+hardstatus on
+#hardstatus alwayslastline "%`%-w%{=s kg}%n %t%{-}%+w"
+
+#caption always "%?%F%{= wk}%:%{= ww}%?%-w%{=u Wk}%n %t%{-}%+w"
+caption always "%?%F%{= wk}%:%{= ww}%?%-w%{=u gk}%n %t%{-}%+w"
+
+# ビープを音を鳴らさず、下のメッセージ領域にメッセージを表示させる
+vbell off
+
+# bashでコマンド実行時にタイトル名をコマンドに変更する設定です
+#shelltitle "$ |$SHELL"
+defhstatus "G"
+caption always
+
+# 現在のウィンドウへの監視機能をトグルさせます
+defmonitor on
+
+# 新しいウィンドウを開くたびに/etc/utmpに新しいエントリを追加
+#deflogin on
+
+# 再attachする場合のパスワードを設定する
+password XXXXXXXXXXXXX
+
+# キーボードが突然動かなくならないように、s設定を排除
+bind s
+
+# screenコマンドそのもののデバッグを行いたい場合onにする
+debug off
+
+# コピーモードでのコピー時に改行をclrfとします。offではLFになります。
+crlf on
+
+# hardcopyを上書きするか追加するかを指定する。
+hardcopy_append on
+
+# hardcopyで使用するファイルを設置するディレクトリを指定する。
+hardcopydir ~/.backupdoc
+
+# ウィンドウログのファイル名前を変更する(デフォルトscreenlog.%n)
+logfile screenlog.%n
+
+# マルチユーザモードの制御
+multiuser off
+
+bind '"^[[[3~":backward-delete-char' 
+
