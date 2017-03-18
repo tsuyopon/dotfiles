@@ -3,3 +3,7 @@
 	email = tsuyoppy@r2.dion.ne.jp
 [core]
 	editor = vim
+[http]
+	sslVerify = false
+[color]
+	ui = true
