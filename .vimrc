@@ -19,7 +19,6 @@ set list
 "言語のsyntaxを色付きで指摘する。パラメータに拡張子指定できる。「:set syntax=html」
 syntax on
 
-
 "見やすい色を表示するようにVimに背景色を教える。darkとlightが選択できる。
 set background=light
 
@@ -32,7 +31,7 @@ set tabstop=4
 "tabstopを変えずに空白を含めることにより、見た目のtabstopを変える
 set softtabstop=0
 
-"タブの入力を空白文字に置き換えない(これを有効にするとメールを書く時などに有効)
+"タブの入力を空白文字に置き換えない(これを有効にするとメールを書く時などに有効) PythonやMakefileを致命的にしない
 set noexpandtab
 
 "自動インデントは半角英字4文字文
@@ -44,14 +43,14 @@ set textwidth=0
 "自動でインデントを行う
 set autoindent
 
-"文字コードはEUC-JP
-set encoding=euc-jp
+"文字コードはUTF-8
+set encoding=utf-8
 
-"端末の文字コードはEUC-JP
-set termencoding=euc-jp
+"端末の文字コードはUTF-8
+set termencoding=utf-8
 
-"ファイルの文字コードはEUC-JP
-set fileencoding=euc-jp
+"ファイルの文字コードはUTF-8
+set fileencoding=utf-8
 
 "以下のbackup関連行が存在すれば$HOME/.backupdocディレクトリに<ファイル名>~のバックアップを行う。
 set backup
@@ -158,6 +157,9 @@ set foldopen=block,hor,mark,percent,quickfix,search,tag,undo
 "}}}
 
 "{{{そのほか設定
+" gfコマンドで移動させるためのもの
+set suffixesadd=.js,.php,.inc,.class,.rb,.py,.pl,.txt
+set path+=/home/tsuyoshi
 
 map! <F2> <C-x><C-k>
 
