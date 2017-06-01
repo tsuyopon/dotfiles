@@ -157,6 +157,10 @@ set foldopen=block,hor,mark,percent,quickfix,search,tag,undo
 "}}}
 
 "{{{そのほか設定
+
+" 貼り付けた際に勝手にインデントしないようにする
+set paste
+
 " gfコマンドで移動させるためのもの
 set suffixesadd=.js,.php,.inc,.class,.rb,.py,.pl,.txt
 set path+=/home/tsuyoshi
