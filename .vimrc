@@ -53,11 +53,11 @@ set termencoding=utf-8
 set fileencoding=utf-8
 
 "以下のbackup関連行が存在すれば$HOME/.backupdocディレクトリに<ファイル名>~のバックアップを行う。
-set backup
-set backupdir=$HOME/.backupdoc
-set backupext=~
-set backupskip=/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*
-set backupdir=$HOME/.backupdoc
+"set backup
+"set backupdir=$HOME/.backupdoc
+"set backupext=~
+"set backupskip=/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*
+"set backupdir=$HOME/.backupdoc
 
 "辞書を定義する。
 set dictionary=$HOME/dev/vim/share/vim/phpman.dict
