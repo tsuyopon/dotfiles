@@ -25,3 +25,9 @@
 	d4 = diff HEAD~~~~
 	d5 = diff HEAD~~~~~
 	d10 = diff HEAD~~~~~~~~~~
+[grep]
+	lineNumber = true
+[color "grep"]
+	match = cyan
+	linenumber = bold white
+	filename = yellow
