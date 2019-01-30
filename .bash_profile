@@ -4,10 +4,22 @@ PATH=$PATH:$HOME/bin
 export PATH
 source $HOME/.alias
 
+#0;30m   Black
+#0;31m   Red
+#0;32m   Green
+#0;33m   Yellow
+#0;34m   Blue
+#0;35m   Purple
+#0;36m   Cyan
+#0;37m   White
+
 PS1="\033[0;36m\u@\h:\033[0;37m\w:\$\033[0;37m "  # blue
 #PS1="\033[0;32m\u@\h:\033[0;37m\w:\$\033[0;37m "  # green
 #PS1="\033[0;33m\u@\h:\033[0;37m\w:\$\033[0;37m "  # yellow
 #PS1="\033[0;31m\u@\h:\033[0;35m\w:\$\033[0;37m "  # red
+
+# add date with prefix
+#PS1='\[\e[1;37m\][\D{%Y/%m/%d} \t \u@\h \W]\$\[\e[m\] '
 
 export LANG=C
 #export LANG=ja_JP.UTF-8
