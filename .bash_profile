@@ -37,6 +37,8 @@ export GREP_OPTIONS="--color=auto --exclude-dir=.git"
 export GREP_COLOR="1;41;37"
 #export GREP_COLOR='1;37;41'
 
+# for git gardle
+export GIT_PAGER="LESSCHARSET=utf-8 less"
 
 function rgrep {
   find "." -type f -name $2 -exec grep $1 {} /dev/null \;

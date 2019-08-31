@@ -2,12 +2,14 @@
 	name = tsuyopon
 	email = tsuyoppy@r2.dion.ne.jp
 [core]
+	pager = less -cm       # git diffの文字化け対策
 	editor = vim
 	status = auto
 	diff = auto
 	branch = auto
 	interactive = auto
 	grep = auto
+	quotepath = false      # git statusの文字化け対策
 [push]
 	default = simple
 [http]
